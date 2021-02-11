@@ -23,7 +23,20 @@ binarySearch([1,4,5,9,11], 5)
 function binarySearch(arr, val) {
   let begin = 0;
   let end = arr.length - 1;
-  let middle = (begin + end) / 2;
-}
+  let middle = Math.floor((begin + end) / 2);
+  // console.log(begin, middle, end);
+  while(arr[middle] !== val && begin <= end) {
+    if (val < arr[middle]) {
+      end = middle -1;
+    } else {
+      begin = middle + 1;
+    }
+    middle = Math.floor((being + end) / 2);
+  }
+  if(arr[middle] === val) {
+    return middle;
+  }
+  return -1;
+};
 
 binarySearch([1,4,5,9,11], 5)
