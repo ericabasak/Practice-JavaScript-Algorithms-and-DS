@@ -8,13 +8,13 @@
 // if you complete the inner loop and find a match, incrememnt the number of matches
 // return the count
 
-// my solution
-function stringSearch(str1, str2) {
-
-}
-
 
 // a correct solution
-function stringSearch(str1, str2) {
+function nativeSearch(long, short) {
+  var count = 0;
+  for(let i = 0; i < long.length; i++) {
 
+  }
 }
+
+nativeSearch("lorie loled", "lol")
