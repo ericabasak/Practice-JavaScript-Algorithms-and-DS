@@ -31,7 +31,6 @@ function nativeSearch(long, short) {
 nativeSearch("lorie loled", "lol")
 
 // a condensed version of the same problem
-
 function nativeSearch(long, short) {
   var count = 0;
   for(let i = 0; i < long.length; i++) {
@@ -42,3 +41,5 @@ function nativeSearch(long, short) {
   }
   return count;
 }
+
+nativeSearch("lorie loled", "lol")
