@@ -28,3 +28,11 @@ function reverse(str) {
   return str.split("").reverse().join("");
 }
 
+
+
+// OPTION 4
+function reverse(str) {
+  return [...'friend'].reverse().join("");
+}
+
+console.log(reverse());
