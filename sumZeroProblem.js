@@ -36,3 +36,20 @@ function sumZero(arr){
 }
 // console.log(sumZero([-7,5,1,6,7]))
 console.log(sumZero([-1,-2,0,1,2]))
+
+// write a function which accepts a sorted array of numbers
+// find two integers that have a sum of zero. return an 
+// array that has the two integers that sum zero or undefined if none
+// of the integers sum zero.
+
+function sumZero(arr) {
+  for (let i = 0; i < arr.length; i++){
+    for (let j = i + 1; j < arr.length; j++){
+      if (arr[i] + arr[j] === 0){
+        return [arr[i], arr[j]];
+      }
+    }
+  }
+}
+
+console.log(sumZero([-99,-77,-6,1,4,99]))
