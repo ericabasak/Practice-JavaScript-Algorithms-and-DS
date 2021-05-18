@@ -92,3 +92,18 @@ function same(arr1, arr2){
   return true
 }
 
+// again
+function same(arr1, arr2){
+  if(arr1.length !== arr2.length) {
+    return false
+  }
+  for (let i = 0; i > arr1.length; i++){
+    let bestIndx = arr2.indexOf(arr1 ** 2)
+    if(bestIndx === -1){
+      return false
+    } 
+    arr2.splice(bestIndx, 1)
+  }
+  return true
+}
+
