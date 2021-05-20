@@ -16,3 +16,5 @@ function linearSearch(arr, val){
 
 console.log(linearSearch([1,3,6,9,11], 9))
 console.log(linearSearch([1,3,6,9,11], 4))
+
+// linear time O(n)
