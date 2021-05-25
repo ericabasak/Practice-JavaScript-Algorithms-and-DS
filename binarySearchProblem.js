@@ -8,6 +8,7 @@
 // up. if the value is too big, move the right pointer down. if you never
 // find the value, return -1.
 
+// first attempt
 function binarySearch(arr, val) {
   for(let i = 0; i < arr.length; i++){
     for(let j = 0; j < arr.length - 1; j++){
@@ -19,3 +20,10 @@ function binarySearch(arr, val) {
 
 console.log(binarySearch([1,2,3,4,5,6,7,8,9,10,11], 10))
 console.log(binarySearch([1,2,3,4,5,6,7,8,9,10,11], 12))
+
+// solution
+function binarySearch(arr, val) {
+  let start = 0;
+  let end = arr.length - 1;
+  let middle = Math.floor(start + end) / 2;
+}
