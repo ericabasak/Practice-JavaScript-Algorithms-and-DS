@@ -41,3 +41,27 @@ function binarySearch(arr, val) {
 }
 console.log(binarySearch([1,2,3,4,5,6,7,8,9,10,11], 10));
 console.log(binarySearch([6,9,12,20], 20));
+
+
+
+// again
+// ask yourself --
+// what are the inputs?
+// what are the outputs?
+function binarySearch(arr, val) {
+  let min = 0;
+  let max = arr.length - 1;
+  let middle = Math.floor((min + max) / 2);
+  while(arr[middle] !== val && min <= max){
+    if(val < arr[middle]){
+      max = middle -1;
+    } else {
+      min = middle + 1;
+    }
+    middle = Math.floor((min + max) / 2);
+  }
+  return middle;
+}
+console.log(binarySearch([1,2,3,4,5], 2));
+console.log(binarySearch([1,2,3,4,5], 5));
+console.log(binarySearch([33,44,58,68,99], 5));
