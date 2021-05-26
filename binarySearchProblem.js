@@ -65,3 +65,28 @@ function binarySearch(arr, val) {
 console.log(binarySearch([1,2,3,4,5], 2));
 console.log(binarySearch([1,2,3,4,5], 5));
 console.log(binarySearch([33,44,58,68,99], 5));
+
+// pseudocode for binary algo
+
+// procedure binary_search
+// arr is sorted array
+// n is length of array
+// x is value to be searched
+
+// set lowerbound = 0
+// set upperbound = n
+
+// while x not found
+// if upperbound < lowerbound
+// exit: x does not exist
+// set midpoint = lowerbound +(upperbound - lowerbound) / 2
+// if arr[midpoint] < x
+// set lowerbound = midpoint + 1
+// if arr[midpoint] > x
+// set upperbound = midpoint - 1
+// if arr[midpoint] = x
+// exit: x found at location midpoint
+// end while
+// end procedure
+
+
