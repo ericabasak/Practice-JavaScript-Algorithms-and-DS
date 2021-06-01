@@ -90,3 +90,42 @@ console.log(binarySearch([33,44,58,68,99], 5));
 // end procedure
 
 
+function binarySearch(arr, val) {
+  let start = 0;
+  let end = arr.length - 1;
+  let midPoint = Math.floor((start + end) / 2);
+
+  while(arr[midPoint] !== val){
+    if(val < arr[midPoint]){
+      end = midPoint - 1;
+    } else {
+      start = midPoint + 1;
+    }
+    midPoint = Math.floor((start + end) / 2);
+  }
+  return midPoint;
+}
+
+console.log(binarySearch([3,5,9,13, 22], 9))
+console.log(binarySearch([3,5,9,13, 22], 11))
+
+// again
+function biSearch(arr, target){
+  let left = 0;
+  let right = arr.length - 1;
+  let midPoint = (left + right) / 2;
+
+  while(left <= right){
+    if(arr[midPoint] === target){
+      midPoint;
+    } else if {
+      if(target < arr[midPoint]){
+      right = mid - 1;
+      } else {
+        left = midPoint + 1;
+      }
+    }
+    return - 1;
+  }
+
+  console.log(biSearch([9,23,55,76,99,104], 99))
