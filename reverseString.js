@@ -10,6 +10,7 @@ function reverseAString(str) {
 console.log(reverseAString("erica"));
 console.log(reverseAString("alphabet"));
 
+// again
 function reverse(str){
   let newStr = "";
   for(let i = str.length - 1; i >= 0; i--){
