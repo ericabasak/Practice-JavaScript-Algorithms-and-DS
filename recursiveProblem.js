@@ -27,3 +27,31 @@ for (const element of arr) {
 }
 
 [1,2,3,4,5].forEach((e) => console.log(++e));
+
+// --------------
+
+function sumUpToFive(){
+  return(1+2+3+4+5)
+}
+console.log(sumUpToFive())
+
+function sumUpToFive(){
+  return (1+2+3+4) + 5;
+}
+console.log(sumUpToFive())
+
+function sumUpTo(num){
+  sumUpTo(num-1)+num;
+}
+console.log(sumUpTo(5))
+
+// ---------------
+
+function sumb(n){
+  if(n > 1){
+    sumb(n - 1) + n;
+  } else {
+    return 1
+  }
+}
+console.log(sumb(5));
