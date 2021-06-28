@@ -1,5 +1,6 @@
 // sorting
 
+// sorting and unsorted array
 function minAndRemove(arr){
   let min = arr[0];
   let minIndex = 0;
@@ -13,6 +14,7 @@ function minAndRemove(arr){
   return min;
 }
 
+// selection sort
 function selectionSort(arr){
   let newMin;
   let sorted = [];
@@ -22,3 +24,24 @@ function selectionSort(arr){
   }
   return newMin;
 }
+
+// another version of selection sort
+function selectionSort(arr){
+  for(let i = 0; i < arr.length; i++){
+    let min = i;
+    for(let j = i + 1; j < arr.length; j++){
+      if(arr[min] > arr[j]){
+        min = j;
+      }
+    }
+    if(min !== i){
+      let temp = arr[i];
+      arr[i] = arr[min];
+      arr[min] = temp;
+    }
+  }
+  return arr;
+}
+console.log(selectionSort([8,4,33,1,0,96]))
+console.log(selectionSort([823,3665,1704,96]))
+
