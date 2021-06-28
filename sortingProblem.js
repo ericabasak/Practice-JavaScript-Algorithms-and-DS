@@ -45,3 +45,20 @@ function selectionSort(arr){
 console.log(selectionSort([8,4,33,1,0,96]))
 console.log(selectionSort([823,3665,1704,96]))
 
+// selection sort again
+function selectionSort(arr){
+  for(let i = 0; i <= arr.length-1; i++){
+    let smallestIdx = i;
+    for(let j = i; j <= arr.length-1; j++){
+      if(arr[j] < arr[smallestIdx]){
+        smallestIdx = j;
+      }
+    }
+    if(arr[i] > arr[smallestIdx]){
+      let temp = arr[i];
+      arr[i] = arr[smallestIdx];
+      arr[smallestIdx] = temp;
+    }
+  }
+  return arr;
+}
