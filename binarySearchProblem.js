@@ -8,6 +8,9 @@
 // up. if the value is too big, move the right pointer down. if you never
 // find the value, return -1.
 
+// big o ==> O(log n) worst case
+// big o ==> O(1) best case
+
 // first attempt
 function binarySearch(arr, val) {
   for(let i = 0; i < arr.length; i++){
@@ -26,7 +29,7 @@ function binarySearch(arr, val) {
   var start = 0;
   var end = arr.length - 1;
   var middle = Math.floor((start + end) / 2);
-  console.log(start, middle, end);
+  // console.log(start, middle, end);
 
   while(arr[middle] !== val){
     if(val < arr[middle]){
@@ -35,7 +38,7 @@ function binarySearch(arr, val) {
       start = middle + 1;
     }
     middle = Math.floor((start + end) / 2);
-    console.log(start, middle, end);
+    // console.log(start, middle, end);
   }
   return middle;
 }
@@ -109,6 +112,30 @@ function binarySearch(arr, val) {
 console.log(binarySearch([3,5,9,13, 22], 9))
 console.log(binarySearch([3,5,9,13, 22], 11))
 
+
+function binarySearch(arr, val){
+  let min = 0;
+  let max = arr.length - 1;
+  let middle = Math.floor((max + min)/2);
+
+  while(val !== arr[middle]){
+    if(val < arr[middle]){
+      max = middle - 1;
+    } else {
+      min = middle + 1;
+    }
+    middle = Math.floor((min + max)/2);
+  }
+  return middle;
+}
+console.log(binarySearch([4,6,8,9,11,15]),15);
+
+
+
+
+
+
+
 // again
 function biSearch(arr, target){
   let left = 0;
@@ -116,7 +143,7 @@ function biSearch(arr, target){
   let midPoint = (left + right) / 2;
 
   while(left <= right){
-    if(arr[midPoint] === target){
+    if(arr[midPoint] !== target){
       midPoint;
     } else if {
       if(target < arr[midPoint]){
@@ -128,4 +155,8 @@ function biSearch(arr, target){
     return - 1;
   }
 
-  console.log(biSearch([9,23,55,76,99,104], 99))
+  console.log(biSearch([9,23,55,76,99,104], 99));
+
+
+
+  

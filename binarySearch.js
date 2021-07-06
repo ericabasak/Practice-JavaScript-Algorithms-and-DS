@@ -1,5 +1,7 @@
 // this is a binary search problem, it is similar to the
 // includes problem and how it is working behind the scene
+// big o ==> O(log n) worst case
+// big o ==> O(1) best case
 
 function binarySearch(string, letter){
   let startPoint = 0;
