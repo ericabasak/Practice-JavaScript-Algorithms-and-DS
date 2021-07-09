@@ -11,21 +11,16 @@
 // i would go through each element in the array.
 // i'd create like a container or a tick on the side to 
 // indicate how often i saw that element. 
-function numOfRepetitions(num, arr){
-  let obj = {};
+// then total the number up and display the one with the most ticks
+function numOfRepetitions(numberToFind, arr){
+  let counter = 0;
   for(let n = 0; n < arr.length; n++){
-    if(arr[i] !== num){
-
-    } else if {
-      if(arr[i] === num) {
-        arr.push(obj)
-      }
-    } else {
-      return -1
+    let currentNumber = arr[n];
+    if(currentNumber === numberToFind) {
+      counter++
     }
-
-  }
-  return obj;
+    if(counter == 0) return -1;
+    return counter;
 }
 console.log(numOfRepetitions(11, [2,7,6,4,2,4,5,4]));
 console.log(numOfRepetitions(4, [2,7,6,4,2,4,5,4]));
