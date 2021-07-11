@@ -137,25 +137,25 @@ console.log(binarySearch([4,6,8,9,11,15]),15);
 
 
 // again
-function biSearch(arr, target){
-  let left = 0;
-  let right = arr.length - 1;
-  let midPoint = (left + right) / 2;
+// function biSearch(arr, target){
+//   let left = 0;
+//   let right = arr.length - 1;
+//   let midPoint = (left + right) / 2;
 
-  while(left <= right){
-    if(arr[midPoint] !== target){
-      midPoint;
-    } else if {
-      if(target < arr[midPoint]){
-      right = mid - 1;
-      } else {
-        left = midPoint + 1;
-      }
-    }
-    return - 1;
-  }
+//   while(left <= right){
+//     if(arr[midPoint] !== target){
+//       midPoint;
+//     } else if {
+//       if(target < arr[midPoint]){
+//       right = mid - 1;
+//       } else {
+//         left = midPoint + 1;
+//       }
+//     }
+//     return - 1;
+//   }
 
-  console.log(biSearch([9,23,55,76,99,104], 99));
+//   console.log(biSearch([9,23,55,76,99,104], 99));
 
 
 
