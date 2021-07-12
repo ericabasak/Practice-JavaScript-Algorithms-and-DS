@@ -1,4 +1,5 @@
 // binary search problem
+// MUST BE SORTED ARRAY
 
 // this function accepts a sorted array and value.
 // create a left pointer at the beginning of the array, and
@@ -155,7 +156,39 @@ console.log(binarySearch([4,6,8,9,11,15]),15);
 //     return - 1;
 //   }
 
-//   console.log(biSearch([9,23,55,76,99,104], 99));
+  // console.log(biSearch([9,23,55,76,99,104], 99));
+
+
+// *************************************
+// CORRECT ANSWER
+// BIG (O) of binarySearch is O(log n) - worst/avg case
+// BIG (O) of binarySearch is O(1) - best case
+
+
+function binarySearch(arr, val){
+  let left = 0;
+  let right = arr.length - 1;
+  let middle = Math.floor((left + right)/2);
+
+  while(val !== arr[middle] && left <= right){
+    if(val < arr[middle]){
+      right = middle - 1;
+    } else {
+      left = middle + 1;
+    }
+    middle = Math.floor((left + right)/2);
+  }
+  if(val === arr[middle]){
+    return middle;
+  } 
+  return -1;
+}
+console.log(binarySearch([9,23,55,76,99,104], 104));
+console.log(binarySearch([9,23,55,76,99,104], 55));
+console.log(binarySearch([9,23,55,76,99,104], 93));
+
+
+
 
 
 
