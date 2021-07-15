@@ -1,4 +1,5 @@
 // native string search practice problem
+// search for a SUBSTRING within a string
 
 // pseudocode
 // loop over the longer string

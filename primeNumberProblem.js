@@ -106,9 +106,17 @@ function isPrime(num){
     }
   }
 }
+console.log(isPrime(1));
+console.log(isPrime(2));
+console.log(isPrime(9));
+console.log(isPrime(11));
+console.log(isPrime(97));
+
+
 console.log(isPrime(5));
 console.log(isPrime(7));
 console.log(isPrime(24));
 console.log(isPrime(8449));
 console.log(isPrime(33));
+
 
