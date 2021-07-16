@@ -13,8 +13,8 @@
 function leapYears(){
   let arr = [];
   for(let n = 2020; n <= 2040; n += 4){
-    console.log(n);
+    arr.push(n);
   }
-  arr.push();
+  return arr;
 }
 console.log(leapYears())
