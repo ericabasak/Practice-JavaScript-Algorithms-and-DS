@@ -7,11 +7,11 @@
 // return reversed array
 
 function reverseArr(arr){
-  for(let i = 0; i < arr.length; i++){
-    for(let j = j + 1; j < arr.length - i - 1 ;j++){
-      
-    }
+  let reversed = [];
+  for(let i = arr.length - 1; i >= 0; i--){
+    reversed.push(arr[i]);
   }
-  return arr;
+  return reversed;
 }
-console.log(reverseArr())
+console.log(reverseArr([4,3,6,7,2,7,5,6,7,1]));
+console.log(reverseArr([1,2,3,4,5,6,7,8,9,10]));
