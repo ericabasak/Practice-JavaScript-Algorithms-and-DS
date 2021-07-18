@@ -1,4 +1,5 @@
 // selection sort
+// starts by moving smallest number to beginning of the array - opposite of bubble sort
 
 // store the first element as the smallest value youve seen so far
 // compare this itemto the next item in the array until you 

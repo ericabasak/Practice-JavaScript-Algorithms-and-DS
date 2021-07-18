@@ -1,5 +1,6 @@
 // bubble sort
 // many sorting algos involve some swapping
+// starts by "bubbling" largest number to the end of array - opposite of selection sort
 
 // start looping from with a variable called i at the end
 // of the array towards the beginning. start in an inner loop 
