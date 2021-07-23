@@ -1,6 +1,6 @@
 // anagrams
 
-// given two strings wirte a function to determine if
+// given two strings write a function to determine if
 // the second string is an anagram of the first. 
 // an anagram is a word, phrase, or name formed by rearrangine the
 // letters of another. ie. cinema/icemand
