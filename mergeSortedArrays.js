@@ -29,7 +29,22 @@ function mergeSortedArray(a,b){
       mergedArr.push(elemB)
       indexOfB++;
       elemB = b[indexOfB];
+    } else if (elemA == elemB){
+      mergedArr.push(elemB);
+      mergedArr.push(elemA);
+      indexOfB++;
+      indexOfA++;
+      elemB = b[indexOfB];
+      elemA = a[indexOfA];
     }
-
+  }
+  // once one of the array has finished inserting all elements into the array
+  // add the rest of the array to the merged array
+  if(indexOfA === a.length){
+    for(let i = indexOfB; i < b.length; i++){
+      mergedArr.push(b[i]);
+    } elseif (indexOfB === b.length){
+      mergedArr.push(a[i]);
+    }
   }
 }
