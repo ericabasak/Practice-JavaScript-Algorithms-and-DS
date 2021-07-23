@@ -12,3 +12,24 @@ indexOfA = 0;
 indexOfB = 0;
 
 mergedArr = [];
+
+function mergeSortedArray(a,b){
+  // initial conditions
+  if(a.length === 0) return b;
+  if(b.length === 0) return a;
+
+  while(indexOfA < a.length && indexOfB < b.length){
+    // loop until either index for array a or index for array b reaches the
+    // end of the array.
+    if(elemA < elemB){
+      mergedArr.push(elemA)
+      indexOfA++;
+      elemA = a[indexOfA];
+    } else if (elemA < elemB){
+      mergedArr.push(elemB)
+      indexOfB++;
+      elemB = b[indexOfB];
+    }
+
+  }
+}
