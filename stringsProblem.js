@@ -43,6 +43,7 @@ function makeFrame(arr){
       // for all other words currentWord then you have to add (* ) in front of word, then 
       // take the difference between the maxWord and currentWord, and put ( ) to make the difference up, 
       // followed by ( *) at the end
+      if(maxWord + "* ")
       
     }
 
