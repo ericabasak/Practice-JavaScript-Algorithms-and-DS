@@ -38,3 +38,12 @@ function noDuplicates(arr){
   return obj.keys();
 }
 console.log(noDuplicates([3,6,7,9,2,2,4]))
+
+let arr = [5,6,2,3]
+for(let i =0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0) {
+        arr.pop(i)
+        i = i - 1
+    }
+}
+console.log()
