@@ -63,3 +63,29 @@ function makeFrame(arr){
   }
   printAstLine(maxLength);
 }
+
+/** adds an * and a space at the beginning of the word
+ *  adds spaces and a * at the END of the word
+ */
+function printLine(word, maxLength){
+  let spacesCount = maxLength - word.length;
+  for(let i = 0; i < spacesCount; i++){
+    word = word + " ";
+  }
+  console.log("* " + word + " *");
+}
+
+
+/** 
+ *  adds spaces and a * at the END of the word
+ */
+function findMaxLength(arr){
+  let maxLen = 0;
+  for(let i = 0; i < arr.length; i++){
+    let word = arr[i];
+    if(word.length > maxLen){
+      maxLen = word.length;
+    }
+  }
+  return maxLength;
+}
