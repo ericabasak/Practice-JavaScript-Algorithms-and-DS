@@ -89,3 +89,12 @@ function findMaxLength(arr){
   }
   return maxLength;
 }
+
+/** 
+ *  prints a line of * of maxLength
+ */
+function printAstLine(maxLength){
+  for(let i = 0; i < maxLength + 4; i++){
+    console.log("*")
+  }
+}
