@@ -19,34 +19,47 @@
 
 
 
-function funFrame(arr){
-  // first thing would be to take the array and separate each string by the (,)
-  // arr.split(",")
-  let text = "";
-  for(let x of arr){
-    text += x;
-    // text.join("*" + x + "*");
-    console.log(x)
-  }
-}
-console.log(funFrame(["Hello", "World", "in", "a", "frame"]))
+// function funFrame(arr){
+//   // first thing would be to take the array and separate each string by the (,)
+//   // arr.split(",")
+//   let text = "";
+//   for(let x of arr){
+//     text += x;
+//     // text.join("*" + x + "*");
+//     console.log(x)
+//   }
+// }
+// console.log(funFrame(["Hello", "World", "in", "a", "frame"]))
 
-// find the longest word
+// // find the longest word
+
+// function makeFrame(arr){
+//   let maxWord = 0;
+//   let currentWord = 0;
+//   for(let i = 0; i < arr.length; i++){
+//     console.log(arr[i])
+//     for(let j = 0; j < arr.length; j++){
+//       // for each maxWord add (* ) in front of word, add ( *) at the end of the word  
+//       // for all other words currentWord then you have to add (* ) in front of word, then 
+//       // take the difference between the maxWord and currentWord, and put ( ) to make the difference up, 
+//       // followed by ( *) at the end
+//       if(maxWord + "* ")
+      
+//     }
+
+//   }
+// }
+// console.log(makeFrame(["Hello", "World", "in", "a", "frame"]))
+
+
+//  should be working solution with coding session with antonio
 
 function makeFrame(arr){
-  let maxWord = 0;
-  let currentWord = 0;
+  let maxLength = findMaxLenght(arr)
+  printAstLine(maxLength)
   for(let i = 0; i < arr.length; i++){
-    console.log(arr[i])
-    for(let j = 0; j < arr.length; j++){
-      // for each maxWord add (* ) in front of word, add ( *) at the end of the word  
-      // for all other words currentWord then you have to add (* ) in front of word, then 
-      // take the difference between the maxWord and currentWord, and put ( ) to make the difference up, 
-      // followed by ( *) at the end
-      if(maxWord + "* ")
-      
-    }
-
+    let word = arr[i];
+    printLine(word, maxLength);
   }
+  printAstLine(maxLength);
 }
-console.log(makeFrame(["Hello", "World", "in", "a", "frame"]))
