@@ -12,6 +12,15 @@ function numRepeats(arr){
 }
 console.log(numRepeats());
 
+// psuedocode
+// got through each number in the array starting from left to right.
+// instantiate an object
+// check to see whether the number exists
+// if the number does not exist, create a new key value pair
+// if the number does exist, increment the value by 1
+// find the key with the largest value
+// return the key
+
 // second attempt
 function mostRepeatedNum(arr){
   let obj = {};
@@ -23,4 +32,15 @@ function mostRepeatedNum(arr){
       obj[elem += 1]
     }
   }
+  let maxValue = 0;
+  let maxKey;
+
+  Object.keys(obj).forEach(key => {
+    let value = obj[key];
+    if(value > maxValue){
+      maxValue = value;
+      maxKey = key;
+    }
+  })
+  return maxKey;
 }
