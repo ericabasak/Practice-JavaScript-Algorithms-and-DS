@@ -44,3 +44,20 @@ function mostRepeatedNum(arr){
   })
   return maxKey;
 }
+
+// again
+// given an array of numbers, find the most repeated number and return it
+// ie. [3,4,5,4,4,4,1,1,6,6,6,1,1,1,4,4,4,4,4] in this example the most repeated number is 4
+
+let obj = { key : value }
+          { obj[arr[i]] === undefined }
+          { 3   : undefined }
+
+function mostRepeatedNumber(arr){
+  let obj = {};
+  for(let i = 0; i < arr.length; i++){
+    if(obj[arr[i]] === undefined){
+
+    }
+  }
+}
